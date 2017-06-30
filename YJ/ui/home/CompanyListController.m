@@ -7,11 +7,11 @@
 //
 
 #import "CompanyListController.h"
-
+#import "CompanyListCell.h"
 @interface CompanyListController ()
-
+@property(nonatomic, strong) NSArray *array;
 @end
-
+static NSString *companyListCellIdentifier = @"CompanyListCell";
 @implementation CompanyListController
 
 - (void)viewDidLoad {
@@ -19,6 +19,34 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
 //    self.title = @"CHECK ME";
+    self.array = @[
+                      @{
+                          @"id": @(1),
+                      @"logo": @"golf.png",
+                      @"name": @"每日高尔夫（北京）科技有限公司",
+                      @"code": @"9111-0101-3303-7306-17",
+    
+                      },
+                      @{
+                          @"id": @(2),
+                      @"logo": @"huifenqi.jpg",
+                      @"name": @"会找房（北京）网络技术有限公司",
+                      @"code": @"9111-0108-3183-4529-5U",
+                      },
+                      @{
+                          @"id": @(3),
+                      @"logo": @"th.png",
+                      @"name": @"北京听花科技有限公司",
+                      @"code": @"9111-0105-MA00-5LKW-0Y",
+                      },
+                      @{
+                          @"id": @(4),
+                      @"logo": @"tairui.png",
+                      @"name": @"泰瑞数创科技（北京）有限公司",
+                      @"code": @"9111-0108-7662-8712-1Q",
+                      }
+                      ];
+    
     [self initUI];
 }
 
@@ -39,22 +67,30 @@
     self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    UINib *nib = [UINib nibWithNibName:@"CompanyListCell" bundle:nil];
+    [self.tableView registerNib:nib forCellReuseIdentifier:companyListCellIdentifier];
     [self.view addSubview:self.tableView];
 }
 
 #pragma mark - UITableViewDatasource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return self.array.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [UITableViewCell new];
+//    UITableViewCell *cell = [UITableViewCell new];
+    CompanyListCell *cell = [tableView dequeueReusableCellWithIdentifier:companyListCellIdentifier forIndexPath:indexPath];
+    NSDictionary *dict = self.array[indexPath.row];
+    NSLog(@">>>>>>>>>>>>>%@",dict);
+    cell.logoImgView.image = [UIImage imageNamed:dict[@"logo"]];
+    cell.companyNameLabel.text = dict[@"name"];
     return cell;
 }
 
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return general_cell_height;
+    return 80;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
