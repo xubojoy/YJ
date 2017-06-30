@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CompanyListController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface CompanyListController : BaseViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic ,strong) UITableView *tableView;
 @property (nonatomic ,strong) HeaderView *headerView;

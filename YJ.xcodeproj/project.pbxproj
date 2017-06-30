@@ -13,6 +13,9 @@
 		1C1CAF051F05F5C4006EFB54 /* th.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C1CAF011F05F5C4006EFB54 /* th.png */; };
 		1C1CAF091F05F981006EFB54 /* CompanyListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1CAF071F05F981006EFB54 /* CompanyListCell.m */; };
 		1C1CAF0A1F05F981006EFB54 /* CompanyListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1CAF081F05F981006EFB54 /* CompanyListCell.xib */; };
+		1C1CAF0D1F061EED006EFB54 /* CompanyDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1CAF0C1F061EED006EFB54 /* CompanyDetailController.m */; };
+		1C1CAF101F062710006EFB54 /* CompanyInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1CAF0F1F062710006EFB54 /* CompanyInfoView.m */; };
+		1C1CAF121F062725006EFB54 /* CompanyInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1CAF111F062725006EFB54 /* CompanyInfoView.xib */; };
 		1C316D231F04F65B00402A7C /* CALayer+LayerShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C316C091F04F65B00402A7C /* CALayer+LayerShape.m */; };
 		1C316D241F04F65B00402A7C /* NSDate+TimeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C316C0B1F04F65B00402A7C /* NSDate+TimeCategory.m */; };
 		1C316D251F04F65B00402A7C /* NSNull+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C316C0D1F04F65B00402A7C /* NSNull+JSON.m */; };
@@ -143,6 +146,11 @@
 		1C1CAF061F05F981006EFB54 /* CompanyListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyListCell.h; sourceTree = "<group>"; };
 		1C1CAF071F05F981006EFB54 /* CompanyListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyListCell.m; sourceTree = "<group>"; };
 		1C1CAF081F05F981006EFB54 /* CompanyListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompanyListCell.xib; sourceTree = "<group>"; };
+		1C1CAF0B1F061EED006EFB54 /* CompanyDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyDetailController.h; sourceTree = "<group>"; };
+		1C1CAF0C1F061EED006EFB54 /* CompanyDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyDetailController.m; sourceTree = "<group>"; };
+		1C1CAF0E1F062710006EFB54 /* CompanyInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyInfoView.h; sourceTree = "<group>"; };
+		1C1CAF0F1F062710006EFB54 /* CompanyInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyInfoView.m; sourceTree = "<group>"; };
+		1C1CAF111F062725006EFB54 /* CompanyInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompanyInfoView.xib; sourceTree = "<group>"; };
 		1C316C061F04F5D800402A7C /* YJ-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YJ-Prefix.pch"; sourceTree = "<group>"; };
 		1C316C081F04F65B00402A7C /* CALayer+LayerShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+LayerShape.h"; sourceTree = "<group>"; };
 		1C316C091F04F65B00402A7C /* CALayer+LayerShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+LayerShape.m"; sourceTree = "<group>"; };
@@ -830,6 +838,8 @@
 			children = (
 				1C316DA81F04F85400402A7C /* CompanyListController.h */,
 				1C316DA91F04F85400402A7C /* CompanyListController.m */,
+				1C1CAF0B1F061EED006EFB54 /* CompanyDetailController.h */,
+				1C1CAF0C1F061EED006EFB54 /* CompanyDetailController.m */,
 				1C316DA71F04F82A00402A7C /* homeView */,
 			);
 			path = home;
@@ -841,6 +851,9 @@
 				1C1CAF061F05F981006EFB54 /* CompanyListCell.h */,
 				1C1CAF071F05F981006EFB54 /* CompanyListCell.m */,
 				1C1CAF081F05F981006EFB54 /* CompanyListCell.xib */,
+				1C1CAF0E1F062710006EFB54 /* CompanyInfoView.h */,
+				1C1CAF0F1F062710006EFB54 /* CompanyInfoView.m */,
+				1C1CAF111F062725006EFB54 /* CompanyInfoView.xib */,
 			);
 			path = homeView;
 			sourceTree = "<group>";
@@ -975,6 +988,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1CAF121F062725006EFB54 /* CompanyInfoView.xib in Resources */,
 				1C316D431F04F65B00402A7C /* 12.jpg in Resources */,
 				1C1CAF041F05F5C4006EFB54 /* tairui.png in Resources */,
 				1C316D7A1F04F65C00402A7C /* MHSheetFoot.xib in Resources */,
@@ -1107,7 +1121,9 @@
 				1C316D851F04F65C00402A7C /* SDPhotoBrowser.m in Sources */,
 				1C316D3D1F04F65B00402A7C /* User.m in Sources */,
 				1C316D5F1F04F65C00402A7C /* CustomEmptyView.m in Sources */,
+				1C1CAF0D1F061EED006EFB54 /* CompanyDetailController.m in Sources */,
 				1C316D871F04F65C00402A7C /* WLZBlockButton.m in Sources */,
+				1C1CAF101F062710006EFB54 /* CompanyInfoView.m in Sources */,
 				1C316D981F04F65C00402A7C /* BIDObjectToNsDictionary.m in Sources */,
 				1C316D241F04F65B00402A7C /* NSDate+TimeCategory.m in Sources */,
 				1C316D6D1F04F65C00402A7C /* IQTextView.m in Sources */,

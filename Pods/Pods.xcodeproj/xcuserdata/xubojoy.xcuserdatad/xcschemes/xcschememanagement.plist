@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>LBXScan.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -49,15 +54,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ZBarSDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>01CADA714D90496E7BFAF61D5D4980E1</key>
+		<key>04CF549EBEEE7BC87AEAE35397184D94</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>04CF549EBEEE7BC87AEAE35397184D94</key>
+		<key>1FB68B239FC231AB91DAFE46BBC8CF03</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>26778637DB96E2DEDC85299DBB0527DB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,22 +92,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>778EF7F7679CC81B3D4C672DE2336069</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9E033EDB5EC0819481B0546434FA577B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B8DEDB32961BD11CFD4CAB5C4861D0FE</key>
+		<key>C133F0FCA9600550CB6D2C239C0D0FCA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D53DA3458F65DA2EB8136340DB1C4B1D</key>
+		<key>C73C0029AFDC7F09D07D8DCFCF8849B6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F1964D78FACEDAA739DD2CF6FC932B93</key>
+		<key>CFF9740221AD1C992E9092838457BF33</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,6 +8,7 @@
 
 #import "CompanyListController.h"
 #import "CompanyListCell.h"
+#import "CompanyDetailController.h"
 @interface CompanyListController ()
 @property(nonatomic, strong) NSArray *array;
 @end
@@ -95,8 +96,9 @@ static NSString *companyListCellIdentifier = @"CompanyListCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    CompanyDetailController *comvc = [[CompanyDetailController alloc] init];
+    [self.navigationController pushViewController:comvc animated:YES];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

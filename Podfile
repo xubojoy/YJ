@@ -12,4 +12,8 @@ target 'YJ' do
  pod 'JSONModel', '~> 1.7.0'
  pod 'OpenUDID', '~> 1.0.0'
  pod 'PinYin4Objc', '~> 1.1.1'
+ pod 'LBXScan/LBXNative','~> 2.2'
+ pod 'LBXScan/LBXZXing','~> 2.2'
+ pod 'LBXScan/LBXZBar','~> 2.2'
+ pod 'LBXScan/UI','~> 2.2'
 end
