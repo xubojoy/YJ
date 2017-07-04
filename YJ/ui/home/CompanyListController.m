@@ -9,6 +9,7 @@
 #import "CompanyListController.h"
 #import "CompanyListCell.h"
 #import "CompanyDetailController.h"
+#import "AddCompanyController.h"
 @interface CompanyListController ()
 @property(nonatomic, strong) NSArray *array;
 @end
@@ -54,6 +55,7 @@ static NSString *companyListCellIdentifier = @"CompanyListCell";
 - (void)initUI{
     [self initHeaderView];
     [self initTableView];
+    [self initBottomBtn];
 }
 
 - (void)initHeaderView{
@@ -64,7 +66,7 @@ static NSString *companyListCellIdentifier = @"CompanyListCell";
 }
 
 - (void)initTableView{
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.headerView.frame.size.height+splite_line_height, screen_width, screen_height-self.headerView.frame.size.height) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.headerView.frame.size.height+splite_line_height, screen_width, screen_height-self.headerView.frame.size.height-tabbar_height) style:UITableViewStylePlain];
     self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -72,6 +74,16 @@ static NSString *companyListCellIdentifier = @"CompanyListCell";
     UINib *nib = [UINib nibWithNibName:@"CompanyListCell" bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:companyListCellIdentifier];
     [self.view addSubview:self.tableView];
+}
+
+- (void)initBottomBtn{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, screen_height-tabbar_height, screen_width, tabbar_height);
+    btn.backgroundColor = [UIColor purpleColor];
+    [btn setTitle:@"添加公司" forState:UIControlStateNormal];
+    [btn.titleLabel setFont:[UIFont systemFontOfSize:default_font_size]];
+    [btn addTarget:self action:@selector(addCompanyBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
 }
 
 #pragma mark - UITableViewDatasource
@@ -98,6 +110,13 @@ static NSString *companyListCellIdentifier = @"CompanyListCell";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     CompanyDetailController *comvc = [[CompanyDetailController alloc] init];
     [self.navigationController pushViewController:comvc animated:YES];
+}
+
+#pragma mark - BtnClick
+
+- (void)addCompanyBtnClick{
+    AddCompanyController *addvc = [[AddCompanyController alloc] init];
+    [self.navigationController pushViewController:addvc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -128,6 +128,7 @@
 		1C316DA41F04F65C00402A7C /* UIImage+utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C316D201F04F65B00402A7C /* UIImage+utils.m */; };
 		1C316DA51F04F65C00402A7C /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C316D221F04F65B00402A7C /* ViewUtils.m */; };
 		1C316DAA1F04F85400402A7C /* CompanyListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C316DA91F04F85400402A7C /* CompanyListController.m */; };
+		1C39FEF41F0B3A9000656EB9 /* AddCompanyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C39FEF31F0B3A9000656EB9 /* AddCompanyController.m */; };
 		1CCC0F621F04F07F00F6DE37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCC0F611F04F07F00F6DE37 /* main.m */; };
 		1CCC0F651F04F07F00F6DE37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCC0F641F04F07F00F6DE37 /* AppDelegate.m */; };
 		1CCC0F681F04F07F00F6DE37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCC0F671F04F07F00F6DE37 /* ViewController.m */; };
@@ -366,6 +367,8 @@
 		1C316D221F04F65B00402A7C /* ViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtils.m; sourceTree = "<group>"; };
 		1C316DA81F04F85400402A7C /* CompanyListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyListController.h; sourceTree = "<group>"; };
 		1C316DA91F04F85400402A7C /* CompanyListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyListController.m; sourceTree = "<group>"; };
+		1C39FEF21F0B3A9000656EB9 /* AddCompanyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCompanyController.h; sourceTree = "<group>"; };
+		1C39FEF31F0B3A9000656EB9 /* AddCompanyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCompanyController.m; sourceTree = "<group>"; };
 		1CCC0F5D1F04F07F00F6DE37 /* YJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CCC0F611F04F07F00F6DE37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1CCC0F631F04F07F00F6DE37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -840,6 +843,8 @@
 				1C316DA91F04F85400402A7C /* CompanyListController.m */,
 				1C1CAF0B1F061EED006EFB54 /* CompanyDetailController.h */,
 				1C1CAF0C1F061EED006EFB54 /* CompanyDetailController.m */,
+				1C39FEF21F0B3A9000656EB9 /* AddCompanyController.h */,
+				1C39FEF31F0B3A9000656EB9 /* AddCompanyController.m */,
 				1C316DA71F04F82A00402A7C /* homeView */,
 			);
 			path = home;
@@ -1095,6 +1100,7 @@
 				1C316D561F04F65B00402A7C /* RDVTabBarItem.m in Sources */,
 				1C316D861F04F65C00402A7C /* SDWaitingView.m in Sources */,
 				1C316D3E1F04F65B00402A7C /* AccountSessionSpringBoard.m in Sources */,
+				1C39FEF41F0B3A9000656EB9 /* AddCompanyController.m in Sources */,
 				1C316D5E1F04F65B00402A7C /* CoreMediaFuncManagerVC.m in Sources */,
 				1C316D8C1F04F65C00402A7C /* XQNewFeatureBaseVc.m in Sources */,
 				1C316D661F04F65C00402A7C /* IQUIScrollView+Additions.m in Sources */,

@@ -26,7 +26,7 @@
                             <constraint firstAttribute="height" constant="60" id="Zt1-qF-gFB"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kh-eL-cQh">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kh-eL-cQh">
                         <rect key="frame" x="78" y="10" width="234" height="60"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="ACd-JW-Jw1"/>
