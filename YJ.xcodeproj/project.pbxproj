@@ -129,6 +129,8 @@
 		1C316DA51F04F65C00402A7C /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C316D221F04F65B00402A7C /* ViewUtils.m */; };
 		1C316DAA1F04F85400402A7C /* CompanyListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C316DA91F04F85400402A7C /* CompanyListController.m */; };
 		1C39FEF41F0B3A9000656EB9 /* AddCompanyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C39FEF31F0B3A9000656EB9 /* AddCompanyController.m */; };
+		1C39FEF71F0B51D100656EB9 /* AddCompanyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C39FEF61F0B51D100656EB9 /* AddCompanyView.m */; };
+		1C39FEF91F0B521500656EB9 /* AddCompanyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C39FEF81F0B521500656EB9 /* AddCompanyView.xib */; };
 		1CCC0F621F04F07F00F6DE37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCC0F611F04F07F00F6DE37 /* main.m */; };
 		1CCC0F651F04F07F00F6DE37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCC0F641F04F07F00F6DE37 /* AppDelegate.m */; };
 		1CCC0F681F04F07F00F6DE37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCC0F671F04F07F00F6DE37 /* ViewController.m */; };
@@ -369,6 +371,9 @@
 		1C316DA91F04F85400402A7C /* CompanyListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyListController.m; sourceTree = "<group>"; };
 		1C39FEF21F0B3A9000656EB9 /* AddCompanyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCompanyController.h; sourceTree = "<group>"; };
 		1C39FEF31F0B3A9000656EB9 /* AddCompanyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCompanyController.m; sourceTree = "<group>"; };
+		1C39FEF51F0B51D100656EB9 /* AddCompanyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCompanyView.h; sourceTree = "<group>"; };
+		1C39FEF61F0B51D100656EB9 /* AddCompanyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCompanyView.m; sourceTree = "<group>"; };
+		1C39FEF81F0B521500656EB9 /* AddCompanyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCompanyView.xib; sourceTree = "<group>"; };
 		1CCC0F5D1F04F07F00F6DE37 /* YJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CCC0F611F04F07F00F6DE37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1CCC0F631F04F07F00F6DE37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -859,6 +864,9 @@
 				1C1CAF0E1F062710006EFB54 /* CompanyInfoView.h */,
 				1C1CAF0F1F062710006EFB54 /* CompanyInfoView.m */,
 				1C1CAF111F062725006EFB54 /* CompanyInfoView.xib */,
+				1C39FEF51F0B51D100656EB9 /* AddCompanyView.h */,
+				1C39FEF61F0B51D100656EB9 /* AddCompanyView.m */,
+				1C39FEF81F0B521500656EB9 /* AddCompanyView.xib */,
 			);
 			path = homeView;
 			sourceTree = "<group>";
@@ -1003,6 +1011,7 @@
 				1CCC0F701F04F07F00F6DE37 /* LaunchScreen.storyboard in Resources */,
 				1C316D601F04F65C00402A7C /* CustomEmptyView.xib in Resources */,
 				1C316D721F04F65C00402A7C /* IQKeyboardManager.bundle in Resources */,
+				1C39FEF91F0B521500656EB9 /* AddCompanyView.xib in Resources */,
 				1C316D8B1F04F65C00402A7C /* XbPopView.xib in Resources */,
 				1C316D461F04F65B00402A7C /* 15.jpg in Resources */,
 				1C316D641F04F65C00402A7C /* HeaderView.xib in Resources */,
@@ -1122,6 +1131,7 @@
 				1C316D3F1F04F65B00402A7C /* LocalNotificationprocessor.m in Sources */,
 				1C316D741F04F65C00402A7C /* LoadingStatusView.m in Sources */,
 				1C316D531F04F65B00402A7C /* JSONKit.m in Sources */,
+				1C39FEF71F0B51D100656EB9 /* AddCompanyView.m in Sources */,
 				1C316D6A1F04F65C00402A7C /* IQUIWindow+Hierarchy.m in Sources */,
 				1C316D551F04F65B00402A7C /* RDVTabBarController.m in Sources */,
 				1C316D851F04F65C00402A7C /* SDPhotoBrowser.m in Sources */,
