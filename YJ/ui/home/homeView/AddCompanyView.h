@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface AddCompanyView : UIView
+@property (nonatomic ,strong) UITextField *companyNameField;
+@property (nonatomic ,strong) UITextField *companyCodeField;
+
 
 @end

@@ -78,10 +78,12 @@ static NSString *companyListCellIdentifier = @"CompanyListCell";
 
 - (void)initBottomBtn{
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, screen_height-tabbar_height, screen_width, tabbar_height);
-    btn.backgroundColor = [UIColor purpleColor];
+    btn.frame = CGRectMake(general_space, screen_height-tabbar_height-general_padding, screen_width-2*general_space, tabbar_height);
+    btn.backgroundColor = [ColorUtils colorWithHexString:@"#1296db"];
     [btn setTitle:@"添加公司" forState:UIControlStateNormal];
     [btn.titleLabel setFont:[UIFont systemFontOfSize:default_font_size]];
+    btn.layer.cornerRadius = 5;
+    btn.layer.masksToBounds = YES;
     [btn addTarget:self action:@selector(addCompanyBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
 }
