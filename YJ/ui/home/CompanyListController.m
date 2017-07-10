@@ -10,7 +10,8 @@
 #import "CompanyListCell.h"
 #import "CompanyDetailController.h"
 #import "AddCompanyController.h"
-@interface CompanyListController ()
+#import "PYSearch.h"
+@interface CompanyListController ()<PYSearchViewControllerDelegate>
 @property(nonatomic, strong) NSArray *array;
 @end
 static NSString *companyListCellIdentifier = @"CompanyListCell";
@@ -62,6 +63,15 @@ static NSString *companyListCellIdentifier = @"CompanyListCell";
     self.headerView.backgroundColor = [UIColor whiteColor];
     self.headerView.backBut.hidden = YES;
     [self.view addSubview:self.headerView];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(screen_width-60, general_space, 60, 44);
+//    btn.backgroundColor = [UIColor cyanColor];
+//    [btn setTitle:@"搜搜" forState:UIControlStateNormal];
+//    [btn.titleLabel setFont:[UIFont systemFontOfSize:default_font_size]];
+    [btn setImage:[UIImage imageNamed:@"search-44"] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(searchCompanyBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.headerView addSubview:btn];
 }
 
 - (void)initTableView{
@@ -69,7 +79,7 @@ static NSString *companyListCellIdentifier = @"CompanyListCell";
     self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     UINib *nib = [UINib nibWithNibName:@"CompanyListCell" bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:companyListCellIdentifier];
     [self.view addSubview:self.tableView];
@@ -103,13 +113,12 @@ static NSString *companyListCellIdentifier = @"CompanyListCell";
 
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 80;
+    return 60;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    CompanyDetailController *comvc = [[CompanyDetailController alloc] init];
-    [self.navigationController pushViewController:comvc animated:YES];
+    
 }
 
 #pragma mark - BtnClick
@@ -118,6 +127,48 @@ static NSString *companyListCellIdentifier = @"CompanyListCell";
     AddCompanyController *addvc = [[AddCompanyController alloc] init];
     [self.navigationController pushViewController:addvc animated:YES];
 }
+
+- (void)searchCompanyBtnClick{
+    PYSearchViewController *searchViewController = [PYSearchViewController searchViewControllerWithHotSearches:nil searchBarPlaceholder:@"输入公司名称" didSearchBlock:^(PYSearchViewController *searchViewController, UISearchBar *searchBar, NSString *searchText) {
+        // Called when search begain.
+        // eg：Push to a temp view controller
+        [searchViewController.navigationController pushViewController:[[CompanyDetailController alloc] init] animated:YES];
+    }];
+//    searchViewController.searchBarBackgroundColor = [ColorUtils colorWithHexString:@"#1296db"];
+    // 3. Set style for popular search and search history
+//    if (0 == indexPath.section) {
+//        searchViewController.hotSearchStyle = (NSInteger)indexPath.row;
+//        searchViewController.searchHistoryStyle = PYHotSearchStyleDefault;
+//    } else {
+//        searchViewController.hotSearchStyle = PYHotSearchStyleDefault;
+//        searchViewController.searchHistoryStyle = (NSInteger)indexPath.row;
+//    }
+    // 4. Set delegate
+    searchViewController.delegate = self;
+    // 5. Present a navigation controller
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:searchViewController];
+    nav.navigationBar.backgroundColor = [ColorUtils colorWithHexString:@"#1296db"];
+    [self presentViewController:nav animated:YES completion:nil];
+
+}
+
+#pragma mark - PYSearchViewControllerDelegate
+- (void)searchViewController:(PYSearchViewController *)searchViewController searchTextDidChange:(UISearchBar *)seachBar searchText:(NSString *)searchText
+{
+    if (searchText.length) {
+        // Simulate a send request to get a search suggestions
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSMutableArray *searchSuggestionsM = [NSMutableArray array];
+            for (int i = 0; i < arc4random_uniform(5) + 10; i++) {
+                NSString *searchSuggestion = [NSString stringWithFormat:@"Search suggestion %d", i];
+                [searchSuggestionsM addObject:searchSuggestion];
+            }
+            // Refresh and display the search suggustions
+            searchViewController.searchSuggestions = searchSuggestionsM;
+        });
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

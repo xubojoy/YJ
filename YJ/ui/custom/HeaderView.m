@@ -32,9 +32,9 @@
         self.nc = navigationController;
         
 //        self.bgImg.image = [UIImage imageNamed:@"top_bar"];
-        self.bgImg.backgroundColor = [ColorUtils colorWithHexString:white_text_color];
+        self.bgImg.backgroundColor = [ColorUtils colorWithHexString:@"#1296db"];
         [self.title setFont:[UIFont boldSystemFontOfSize:bigger_1_font_size]];
-        [self.title setTextColor:[ColorUtils colorWithHexString:black_text_color]];
+        [self.title setTextColor:[ColorUtils colorWithHexString:white_text_color]];
         [self.title setTextAlignment:NSTextAlignmentCenter];
 //        [self.title setText:[titleStr stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
         [self.title setText:titleStr.stringByRemovingPercentEncoding];

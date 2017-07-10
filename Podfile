@@ -16,5 +16,6 @@ target 'YJ' do
  pod 'LBXScan/LBXZXing','~> 2.2'
  pod 'LBXScan/LBXZBar','~> 2.2'
  pod 'LBXScan/UI','~> 2.2'
+ pod 'PYSearch', '~> 0.8.2'
 # pod 'TBActionSheet', '~> 1.5.4'
 end

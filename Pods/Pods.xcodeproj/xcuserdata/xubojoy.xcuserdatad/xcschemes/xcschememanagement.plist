@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PYSearch.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>PinYin4Objc.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -72,12 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>26778637DB96E2DEDC85299DBB0527DB</key>
+		<key>2A839CF5447E9DD9F12D53D8128DED7E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2A839CF5447E9DD9F12D53D8128DED7E</key>
+		<key>355E33A3E7D56D4CB6FDD6EDEFE330D9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,7 +97,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>778EF7F7679CC81B3D4C672DE2336069</key>
+		<key>6486B03032DAC8E326E6711BE43EEF24</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>89FA030D1D14B2A83658AFE86159A42A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,17 +112,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C133F0FCA9600550CB6D2C239C0D0FCA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C73C0029AFDC7F09D07D8DCFCF8849B6</key>
+		<key>CDE9854310DDD4FABB3FF1DF6714D155</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>CFF9740221AD1C992E9092838457BF33</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E169E16B7C613682CD470A005EDB323F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

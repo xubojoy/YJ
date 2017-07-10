@@ -13,13 +13,12 @@
 @end
 
 @implementation BaseViewController
-// 视图显示的时候, 隐藏系统导航  使用自定义导航
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+// 视图消失的时候, 将系统导航恢复
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
     
     if (self.navigationController) {
-        
-        self.navigationController.navigationBarHidden = YES;
+        self.navigationController.navigationBarHidden = NO;
     }
 }
 - (void)viewDidLoad {

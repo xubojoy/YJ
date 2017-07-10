@@ -18,6 +18,15 @@
 @end
 
 @implementation CompanyDetailController
+//视图显示的时候, 隐藏系统导航  使用自定义导航
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if (self.navigationController) {
+        
+        self.navigationController.navigationBarHidden = YES;
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

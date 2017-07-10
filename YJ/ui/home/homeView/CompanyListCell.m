@@ -13,8 +13,9 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    self.logoImgView.layer.cornerRadius = 30;
+    self.logoImgView.layer.cornerRadius = 20;
     self.logoImgView.layer.masksToBounds = YES;
+    self.downLine.backgroundColor = [ColorUtils colorWithHexString:splite_line_color];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

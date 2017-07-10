@@ -13,5 +13,5 @@
 @property (weak, nonatomic) IBOutlet UIImageView *logoImgView;
 @property (weak, nonatomic) IBOutlet UILabel *companyNameLabel;
 
-
+@property (weak, nonatomic) IBOutlet UIView *downLine;
 @end
