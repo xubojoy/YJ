@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddCompanyController : UIViewController
+@interface AddCompanyController : BaseViewController
 
 @end
