@@ -33,7 +33,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Inf-JN-rZy">
-                        <rect key="frame" x="10" y="60" width="310" height="0.5"/>
+                        <rect key="frame" x="10" y="59" width="310" height="0.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="0.5" id="YOs-0A-6kQ"/>
@@ -49,7 +49,7 @@
                     <constraint firstItem="goo-xc-erA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="bwB-fo-bVB"/>
                     <constraint firstAttribute="bottom" secondItem="8kh-eL-cQh" secondAttribute="bottom" id="enr-b0-zqL"/>
                     <constraint firstItem="goo-xc-erA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="w8r-1y-yP8"/>
-                    <constraint firstAttribute="bottom" secondItem="Inf-JN-rZy" secondAttribute="bottom" constant="-1" id="z5q-bS-VZs"/>
+                    <constraint firstAttribute="bottom" secondItem="Inf-JN-rZy" secondAttribute="bottom" id="z5q-bS-VZs"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

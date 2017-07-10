@@ -129,7 +129,8 @@ static NSString *companyListCellIdentifier = @"CompanyListCell";
 }
 
 - (void)searchCompanyBtnClick{
-    PYSearchViewController *searchViewController = [PYSearchViewController searchViewControllerWithHotSearches:nil searchBarPlaceholder:@"输入公司名称" didSearchBlock:^(PYSearchViewController *searchViewController, UISearchBar *searchBar, NSString *searchText) {
+    NSArray *hostArray = @[@"每日高尔夫（北京）科技有限公司",@"会找房（北京）网络技术有限公司",@"北京听花科技有限公司",@"泰瑞数创科技（北京）有限公司",@"北京百度网讯科技有限公司",@"阿里巴巴（中国）网络技术有限公司",@"深圳市腾讯计算机系统有限公司"];
+    PYSearchViewController *searchViewController = [PYSearchViewController searchViewControllerWithHotSearches:hostArray searchBarPlaceholder:@"输入公司名称" didSearchBlock:^(PYSearchViewController *searchViewController, UISearchBar *searchBar, NSString *searchText) {
         // Called when search begain.
         // eg：Push to a temp view controller
         [searchViewController.navigationController pushViewController:[[CompanyDetailController alloc] init] animated:YES];
